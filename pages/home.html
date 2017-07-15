@@ -1,0 +1,69 @@
+<div class="homeWrapper">
+
+    <div id="slideshow">
+        <div>
+            <img src="images/homeSlider1.jpg">
+        </div>
+        <div style="display:none">
+            <img src="images/homeSlider2.jpg">
+        </div>
+        <div style="display:none">
+            <img src="images/homeSlider3.jpg">
+        </div>
+    </div>
+
+
+    <div class="callNow"><a href="tel:050-3000090">התקשר עכשיו - 050-3000090<i class="fa fa-phone"
+                                                                               aria-hidden="true"></i></a></div>
+    <div class="cameraSection">
+        <div><p>הכירו את המצלמה התרמית</p>
+            <a href="#/"><img src="images/camera.png" class="animated pulse camera"/></a></div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QXWKprjJq1c" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="fourSections">
+        <div data-toggle="modal" data-target="#myModal"
+             ng-click="modalTitle = 'פתיחת סתימות'; modalText='אנו פותחים סתימות בלה בלה בלה'"><p>פתיחת סתימות</p>
+            <section class="squere">
+                <h2>סתימות</h2></section>
+            </section>
+        </div>
+        <div data-toggle="modal" data-target="#myModal"
+             ng-click="modalTitle = 'רטיבות ונזילות'; modalText='אנו פותחים סתימות בלה בלה בלה'"><p>רטיבות ונזילות</p>
+            <section class="squere"><h2>רטיבות</h2></section>
+        </div>
+        <div data-toggle="modal" data-target="#myModal"
+             ng-click="modalTitle = 'ביובית'; modalText='אנו פותחים סתימות בלה בלה בלה'"><p>ביובית</p>
+            <section class="squere"><h2>ביובית</h2></section>
+        </div>
+        <div data-toggle="modal" data-target="#myModal"
+             ng-click="modalTitle = 'מצלמה תרמית'; modalText='אנו פותחים סתימות בלה בלה בלה'"><p>מצלמה תרמית</p>
+            <section class="squere"><h2>מצלמה</h2></section>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">{{modalTitle}}</h4>
+            </div>
+            <div class="modal-body">
+                <p>{{modalText}}</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">סגור</button>
+            </div>
+        </div>
+
+    </div>
+</div>
